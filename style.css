@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f8fc, #e3f2fd);
+  color: #333;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  background: #fff;
+  color: #111;
+  padding: 30px 20px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.hero h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.hero p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Social Links Section */
+.social-links {
+  text-align: center;
+  padding: 30px 20px;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.social-buttons a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+/* Telegram */
+.social-buttons .telegram { background: #0088cc; }
+.social-buttons .telegram:hover { background: #006fa1; }
+/* TikTok */
+.social-buttons .tiktok { background: #000; }
+.social-buttons .tiktok:hover { background: #222; }
+/* Facebook */
+.social-buttons .facebook { background: #1877f2; }
+.social-buttons .facebook:hover { background: #145dbd; }
+/* Instagram */
+.social-buttons .instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+.social-buttons .instagram:hover { opacity: 0.9; }
+
+/* Videos Section */
+.videos {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fafafa;
+}
+.videos h2 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'Rudaw', sans-serif;
+  margin-bottom: 25px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.video-box {
+  flex: 1 1 45%;
+  max-width: 500px;
+  text-align: center;
+}
+.video-box video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.video-box video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.video-box p {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Rudaw', sans-serif;
+  color: #222;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .video-box { flex: 1 1 100%; }
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Reveal Animation */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.reveal.show { opacity: 1; transform: translateY(0); }
